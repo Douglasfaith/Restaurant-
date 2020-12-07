@@ -1,4 +1,5 @@
 const recipeController = require('../controllers/recipeController');
+const signinController = require('../controllers/signinController');
 
 module.exports = (app) => {
   app.get('/api', (req, res) => res.status(200).send({
@@ -6,4 +7,6 @@ module.exports = (app) => {
   }));
 
   app.post('/api/recipe', recipeController.create);
+  app.post('/api/signup', signinController.signup);
+  app.post('/api/login', signinController.login);
 };
