@@ -14,6 +14,10 @@ module.exports = {
       lastName: {
         type: Sequelize.STRING
       },
+
+      passWord:{
+        type: Sequelize.STRING
+      },
       emailAddress: {
         type: Sequelize.STRING
       },
